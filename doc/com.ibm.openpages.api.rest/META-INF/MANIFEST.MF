@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Class-Path: com.ibm.openpages.api.marshalling.jar 
+ com.ibm.openpages.api.jar 
+ slf4j-api-1.6.1.jar 
+ wink-1.2.1-incubating.jar 
+ jsr311-api-1.1.1.jar 
+ commons-io.jar 
+ commons-lang.jar 
+ juno-5.1.0.4.jar 
+ opappcommontools.jar
+
