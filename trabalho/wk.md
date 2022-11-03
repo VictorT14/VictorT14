@@ -28,13 +28,67 @@
  "|	-|-|
  |29|CPF (999.999.999-99)	|Travar o campo CPF na quantidade máxima de caracteres.|	-|	-|
  |29|CPF (999.999.999-99)	|Incluir validação do número do CPF.|	-	|-|
- |30| Viagem Internacional?|	Incluir o campo “Viagem Internacional?” (mesmo campo do trecho)  entre o campo os campos "CPF" e "Passaporte".|	-	|-|
- |31|Número do Processo de Autorização (viagem internacional)	"Inserir o campo “Número do Processo de Autorização (viagem internacional)” após o campo ""Passaporte"".
-Tipo: Texto com máscara (00000.000000/2020-00);
-Visível e Necessário quando ""Viagem Internacional"" = ""Sim""."	|-	|-|
-Número do Processo de Autorização (viagem internacional)	Incluir procedimento para integração com o SEI na autuação, anexação de documentos e tramitação do processo de viagem internacional.	-	-
-![image](https://user-images.githubusercontent.com/101873549/199009022-8c0a03b0-9ee2-4266-a0c8-d961460a0e19.png)
+ |30|Viagem Internacional?|	Incluir o campo “Viagem Internacional?” (mesmo campo do trecho)  entre o campo os campos "CPF" e "Passaporte".|	-	|-|
+ |30|Viagem Internacional?| Alterar descrição|	viagem_internacional |	Viagem internacional?|
+ |30|Viagem Internacional?|Incluir aviso de que os campos "Número do Processo de Autorização" e "Passaporte" são necessários quando "Viagem Internacional" = "Sim".|	-|	O "Número do Processo de Autorização" e o "Passaporte" são obrigatórios para viagens internacionais.|
+ |31|Número do Processo de Autorização (viagem internacional)|	"Inserir o campo “Número do Processo de Autorização (viagem internacional)” após o campo ""Passaporte"".Tipo: Texto com máscara (00000.000000/2020-00);Visível e Necessário quando ""Viagem Internacional"" = ""Sim""."
+ |31| Número do Processo de Autorização (viagem internacional)|	Incluir procedimento para integração com o SEI na autuação, anexação de documentos e tramitação do processo de  viagem internacional.|	-	|-|
+|32|Passaporte (AB123456)|Permitir somente a inclusão de caracteres alfanuméricos no campo Passaporte.|-	|-|
+|32|Passaporte (AB123456)|Alterar descrição|passaporte_servidor|Passaporte do beneficiário da solicitação|
+|32|Passaporte (AB123456)|Travar o campo Passaporte na quantidade máxima de caracteres.-	|-|
+|32|Passaporte (AB123456)|O campo Passaporte somente deve ser exibido quando se tratar de viagem internacional.|-	|-|
+|32|Passaporte (AB123456)|O campo Passaporte deve ser obrigatório caso "Viagem Internacional?" = "Sim"|-	|-|
+|33|	-|	Alterar aviso|	"Modo apenas de visualização A visualização de tarefas será editável assim que o flyover do Quick View for fechado."|	"Modo apenas de visualização A visualização de tarefas será editável assim que o painel lateral for fechado."|
+|34| Descrição do motivo da viagem	|Excluir campo|	-	|-|
+|35| Despacho de bagagem?|	Alterar descrição|	despacho_bagagem	| O servidor necessitará despachar bagagem?|
+|35| Despacho de bagagem?| ecessário = "Verdadeiro", Padrão = "Não"|	-|	-|
+|35| Despacho de bagagem?|	Incluir aviso caso "Despacho de bagagem?" = "Sim".|-	|Viagens de até dois pernoites não permitem o despacho de bagagem.|
+|36| Viagens em Urgência/finais de semana?|	Alterar rótulo	|Viagens em Urgência/finais de semana?|	Viagens em urgência, finais de semana ou feriado?|
+|36| Viagens em Urgência/finais de semana?|	Necessário = "Verdadeiro"|	-|	-|
+|36| Viagens em Urgência/finais de semana?|	Alterar descrição|	viagens_urgencia_finais_semana|	Selecione "Sim"  no caso de viagem solicitada em prazo inferior ao definido pela SAF ou que deva ser realizada durante finais de semana ou feriados.|
+|36| Viagens em Urgência/finais de semana?|	Incluir aviso caso "Viagens em Urgência/finais de semana?" = "Sim".|	-	|"Informe as circunstâncias da urgência (imprevisibilidade, inviabilidade de agendamento posterior ou risco institucional) ou as justificativas para a solicitação de diárias em finais de semana no campo ""Observações - PCDP"".|
+|37| Observações - PCDP|	Alterar descrição|	observacoes_PCDP|	Observações adicionais da solicitação.|
+|38| Viagem com Origem Diversa da Localidade de Exercício?|	Alterar descrição|	viagem_origem_diversa_localidade_exercicio|	Informar "Sim" no caso de concessão de diárias e passagens que tenham por objeto a emissão de bilhete aéreo com origem diversa da localidade da unidade organizacional, para participante do Pacto ANAC+, em que o servidor esteja em exercício, de acordo com o previsto na Portaria Nº 7.016/SAF, de 19 de janeiro de 2022.|
+|38|Viagem com Origem Diversa da Localidade de Exercício?|	Necessário = "Verdadeiro"|	-|	C|
+|38|Viagem com Origem Diversa da Localidade de Exercício?|		Alterar aviso|		Para viagem com origem diversa da localidade em exercício, os gastos com passagens para locomoção diversa fica sob responsabilidade do servidor.	|	"Para solicitação de viagem com origem diversa do local de exercício, o servidor deverá autuar o devido processo conforme orientações da SAF:https://intranet.anac.gov.br/servicos/saf/viagens-e-deslocamentos/concessao-de-diarias-e-passagens-aereas-com-origem-diversa-da-localidade-de-exercicio-do-servidor; https://extranet.anac.gov.br/servicos/saf/viagens-e-deslocamentos/concessao-de-diarias-e-passagens-aereas-com-origem-diversa-da-localidade-de-exercicio-do-servidor; Os eventuais custos adicionais deverão ser ressarcidos pelo servidor."|	
 
- 
+|38|
+|39|
+|39|
+|39|
+|40|
+|40|
+|41|
+|41|
+|41|
+|41|
+|42|
+|42|
+|43|
+|43|
+|43|
+|43|
+|44|
+|44|
+|45|
+|45|
+|45|
+|46|
+|47|
+|47|
+|47|
+|48|
+|49|
+|49|
+|50|
+|50|
+|51|
+|52|
+|52|
+|53|
+|54|
+
+
+
 
 
