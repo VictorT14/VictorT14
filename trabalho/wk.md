@@ -51,42 +51,70 @@
 |38| Viagem com Origem Diversa da Localidade de Exercício?|	Alterar descrição|	viagem_origem_diversa_localidade_exercicio|	Informar "Sim" no caso de concessão de diárias e passagens que tenham por objeto a emissão de bilhete aéreo com origem diversa da localidade da unidade organizacional, para participante do Pacto ANAC+, em que o servidor esteja em exercício, de acordo com o previsto na Portaria Nº 7.016/SAF, de 19 de janeiro de 2022.|
 |38|Viagem com Origem Diversa da Localidade de Exercício?|	Necessário = "Verdadeiro"|	-|	C|
 |38|Viagem com Origem Diversa da Localidade de Exercício?|		Alterar aviso|		Para viagem com origem diversa da localidade em exercício, os gastos com passagens para locomoção diversa fica sob responsabilidade do servidor.	|	"Para solicitação de viagem com origem diversa do local de exercício, o servidor deverá autuar o devido processo conforme orientações da SAF:https://intranet.anac.gov.br/servicos/saf/viagens-e-deslocamentos/concessao-de-diarias-e-passagens-aereas-com-origem-diversa-da-localidade-de-exercicio-do-servidor; https://extranet.anac.gov.br/servicos/saf/viagens-e-deslocamentos/concessao-de-diarias-e-passagens-aereas-com-origem-diversa-da-localidade-de-exercicio-do-servidor; Os eventuais custos adicionais deverão ser ressarcidos pelo servidor."|	
+|38|	Viagem com Origem Diversa da Localidade de Exercício?|	Incluir procedimento para integração com o SEI na autuação, anexação de documentos e tramitação do processo de "Solicitação de Viagem com Origem Diversa da Localidade de Exercício".	| - | 	- |
+|39| Documento Motivador|	Ocultar ou bloquear campos não utilizados “IdDocumento”.	 | -	| - |
+|39| Documento Motivador|	Do que se trata esse campo “Assinaturas”? |	-	|-|
+|39| Documento Motivador|	Devo efetuar o check-out? Qual o efeito? |	-	|- |
+|40| Localidade Onde Ocorrerá a Atividade | Alterar descrição  |	localidade_onde_ocorrera_atividade	| Local (Cidade/UF) e endereço onde a atividade será realizada.|
+|40| Localidade Onde Ocorrerá a Atividade |	Necessário = "Verdadeiro"|	-|	-|
+|41| Data de Início da Missão	|Alterar descrição|	data_inicio_missao|	Data de início da atividade.|
+|41| Data de Início da Missão	|Necessário = "Verdadeiro"|	-|	-|
+|41| Data de Início da Missão	|Importar a informação da Fiscalização("Início Planejado - Execução") quando for o caso.|	-|	-|
+|41| Data de Início da Missão	|Incluir Regra: Maior que ou igual a Hoje|	-|	-|
+|42| Horário de Início da Missão|	Alterar descrição	|horario_inicio_missao	|Horário de início da atividade.|
+|42| Horário de Início da Missão|	Aceitar somente números aplicando a máscara de hora enquanto o texto é digitado.|	-|	-|
+|43| Data de Término Prevista	|Alterar descrição	|data_termino_prevista|	Data prevista pra o término da atividade.|
+|43| Data de Término Prevista	|Necessário = "Verdadeiro"|	-|	-|
+|43| Data de Término Prevista	|Importar a informação da Fiscalização (Término Planejado - Execução) quando for o caso.|	-|	-|
+|43| Data de Término Prevista	|Incluir Regra: Maior que ou igual a "Data de Início da Missão"|-	|-|
 
-|38|
-|39|
-|39|
-|39|
-|40|
-|40|
-|41|
-|41|
-|41|
-|41|
-|42|
-|42|
-|43|
-|43|
-|43|
-|43|
-|44|
-|44|
-|45|
-|45|
-|45|
-|46|
-|47|
-|47|
-|47|
-|48|
-|49|
-|49|
-|50|
-|50|
-|51|
-|52|
-|52|
-|53|
-|54|
+
+|44|Horário de Término Prevista|	Alterar descrição|	horario_termino_prevista|	Horário previsto para o término da atividade.|
+|44|Horário de Término Prevista|	Aceitar somente números aplicando a máscara de hora enquanto o texto é digitado.|	-|	-|
+
+
+|45| Cumprirá expediente antes do Embarque?|	Alterar descrição|	cumprira_expediente_antes_do_Embarque|	Informar caso o servidor tenha que cumprir expediente antes do embarque no trecho inicial de ida.|
+|45|Cumprirá expediente antes do Embarque?|	Necessário = "Verdadeiro"|	-|	-|
+|45|Cumprirá expediente antes do Embarque?	|"Alterar tipo para lista com as seguintes opções: Não (Padrão); e Sim;"|	-|	-|
+
+|46| Horário de Término do Expediente	"Incluir campo do tipo hora.
+Descrição: Horário de Término do Expediente
+Visível e Necessário caso ""Cumprirá expediente antes do Embarque?"" = ""Sim"""	-	-
+
+|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	Alterar descrição	cumprira_expediente_apos_desembarque_retorno_missao	Informar caso o servidor tenha que cumprir expediente após o desembarque no trecho final de volta.
+
+|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	Necessário = "Verdadeiro"	-	-
+|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	"Alterar tipo para lista com as seguintes opções: 
+Não (Padrão); e
+Sim;
+"	-	-
+
+|48| Horário de Início do Expediente	"Incluir campo do tipo hora.|Descrição: Horário de Término do Expediente Visível e Necessário caso ""Cumprirá expediente após o Desembarque no Retorno da Missão?"" = ""Sim"""	-	-
+
+|49|Idenficação de alguma dificuldade Logística com Relação ao seu deslocamento	Alterar descrição	idenficacao_dificuldade_logistica_deslocamento	Dificuldades logísticas em relação ao deslocamento que devam ser observadas na concessão da PCDP.
+|49|Idenficação de alguma dificuldade Logística com Relação ao seu deslocamento	Necessário = "Verdadeiro"	-	-
+
+
+|50|Tempo de deslocamento Aeroporto/Missão - Missão/Aeroporto (min)	Alterar descrição	tempo_deslocamento_aeroporto_missao_missao_aeroporto	Tempo de deslocamento do aeroporto até o local da missão, contado em minutos. O valor 0 deve ser informado caso não se aplique.
+|50|Tempo de deslocamento Aeroporto/Missão - Missão/Aeroporto (min)	Necessário = "Verdadeiro"	-	-
+
+|51|Horário previsto para uso de outro meio de transporte após/antes do deslocamento aéreo	Alterar descrição	horario_previsto_uso_outro_transporte_apos_antes_deslocamento	Horário previsto para uso de outro meio de transporte após/antes do deslocamento aéreo.
+
+
+|52|Proposta de Voos	|Alterar descrição	proposta_voos	|Informar os voos propostos.|
+|52|Proposta de Voos|	Necessário = "Verdadeiro"|	-	|-|
+
+|53| Tipo de viagem	|"Incluir o campo “Tipo de viagem” do tipo lista no início da seção com as seguintes opções:
+Ida e Volta (padrão); Somente Ida; e Somente Volta."|	-|	-|
+|54| -	|Alterar texto do aviso	"Atenção ao Preenchimento O preenchimento dos trechos de viagem deve conter no mínimo dois trechos, um com etapa de deslocamento de Ida e outro com etapa de deslocamento de Volta."|	"Atenção ao Preenchimento O preenchimento dos trechos de viagem deve conter no mínimo: Um trecho de ida e um trecho de volta para viagens de Ida e Volta; Um trecho de ida , para viagens só de ida; ou Um trecho de volta para viagens só de volta."|
+
+
+
+
+
+
+
+
 
 
 
