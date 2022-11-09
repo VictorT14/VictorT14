@@ -67,46 +67,25 @@
 |43| Data de Término Prevista	|Necessário = "Verdadeiro"|	-|	-|
 |43| Data de Término Prevista	|Importar a informação da Fiscalização (Término Planejado - Execução) quando for o caso.|	-|	-|
 |43| Data de Término Prevista	|Incluir Regra: Maior que ou igual a "Data de Início da Missão"|-	|-|
-
-
 |44|Horário de Término Prevista|	Alterar descrição|	horario_termino_prevista|	Horário previsto para o término da atividade.|
 |44|Horário de Término Prevista|	Aceitar somente números aplicando a máscara de hora enquanto o texto é digitado.|	-|	-|
-
-
 |45| Cumprirá expediente antes do Embarque?|	Alterar descrição|	cumprira_expediente_antes_do_Embarque|	Informar caso o servidor tenha que cumprir expediente antes do embarque no trecho inicial de ida.|
 |45|Cumprirá expediente antes do Embarque?|	Necessário = "Verdadeiro"|	-|	-|
 |45|Cumprirá expediente antes do Embarque?	|"Alterar tipo para lista com as seguintes opções: Não (Padrão); e Sim;"|	-|	-|
-
-|46| Horário de Término do Expediente	"Incluir campo do tipo hora.
-Descrição: Horário de Término do Expediente
-Visível e Necessário caso ""Cumprirá expediente antes do Embarque?"" = ""Sim"""	-	-
-
-|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	Alterar descrição	cumprira_expediente_apos_desembarque_retorno_missao	Informar caso o servidor tenha que cumprir expediente após o desembarque no trecho final de volta.
-
-|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	Necessário = "Verdadeiro"	-	-
-|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	"Alterar tipo para lista com as seguintes opções: 
-Não (Padrão); e
-Sim;
-"	-	-
-
-|48| Horário de Início do Expediente	"Incluir campo do tipo hora.|Descrição: Horário de Término do Expediente Visível e Necessário caso ""Cumprirá expediente após o Desembarque no Retorno da Missão?"" = ""Sim"""	-	-
-
-|49|Idenficação de alguma dificuldade Logística com Relação ao seu deslocamento	Alterar descrição	idenficacao_dificuldade_logistica_deslocamento	Dificuldades logísticas em relação ao deslocamento que devam ser observadas na concessão da PCDP.
-|49|Idenficação de alguma dificuldade Logística com Relação ao seu deslocamento	Necessário = "Verdadeiro"	-	-
-
-
-|50|Tempo de deslocamento Aeroporto/Missão - Missão/Aeroporto (min)	Alterar descrição	tempo_deslocamento_aeroporto_missao_missao_aeroporto	Tempo de deslocamento do aeroporto até o local da missão, contado em minutos. O valor 0 deve ser informado caso não se aplique.
-|50|Tempo de deslocamento Aeroporto/Missão - Missão/Aeroporto (min)	Necessário = "Verdadeiro"	-	-
-
-|51|Horário previsto para uso de outro meio de transporte após/antes do deslocamento aéreo	Alterar descrição	horario_previsto_uso_outro_transporte_apos_antes_deslocamento	Horário previsto para uso de outro meio de transporte após/antes do deslocamento aéreo.
-
-
+|46| Horário de Término do Expediente	| Incluir campo do tipo hora. Descrição: Horário de Término do Expediente Visível e Necessário caso "Cumprirá expediente antes do Embarque?" = "Sim""|-|	-|
+|47|Cumprirá expediente após o Desembarque no Retorno da Missão?	|Alterar descrição	|cumprira_expediente_apos_desembarque_retorno_missao|	Informar caso o servidor tenha que cumprir expediente após o desembarque no trecho final de volta.|
+|47|Cumprirá expediente após o Desembarque no Retorno da Missão?|	Necessário = "Verdadeiro"|	-|	-|
+|47|Cumprirá expediente após o Desembarque no Retorno da Missão?|	"Alterar tipo para lista com as seguintes opções: Não (Padrão); e Sim;"|	-	|-|
+|48| Horário de Início do Expediente|	"Incluir campo do tipo hora.Descrição: Horário de Término do Expediente Visível e Necessário caso ""Cumprirá expediente após o Desembarque no Retorno da Missão?"" = ""Sim"""|	-|	-|
+|49|Idenficação de alguma dificuldade Logística com Relação ao seu deslocamento|	Alterar descrição	|idenficacao_dificuldade_logistica_deslocamento	Dificuldades logísticas em relação ao deslocamento que devam ser observadas na concessão da PCDP.
+|49|Idenficação de alguma dificuldade Logística com Relação ao seu deslocamento|	Necessário = "Verdadeiro"|	-	|-|
+|50|Tempo de deslocamento Aeroporto/Missão - Missão/Aeroporto (min)|	Alterar descrição	|tempo_deslocamento_aeroporto_missao_missao_aeroporto|	Tempo de deslocamento do aeroporto até o local da missão, contado em minutos. O valor 0 deve ser informado caso não se aplique.
+|50|Tempo de deslocamento Aeroporto/Missão - Missão/Aeroporto (min)|	Necessário = "Verdadeiro"|	-|	-|
+|51|Horário previsto para uso de outro meio de transporte após/antes do deslocamento aéreo|	Alterar descrição	|horario_previsto_uso_outro_transporte_apos_antes_deslocamento|	Horário previsto para uso de outro meio de transporte após/antes do deslocamento aéreo.|
 |52|Proposta de Voos	|Alterar descrição	proposta_voos	|Informar os voos propostos.|
 |52|Proposta de Voos|	Necessário = "Verdadeiro"|	-	|-|
-
-|53| Tipo de viagem	|"Incluir o campo “Tipo de viagem” do tipo lista no início da seção com as seguintes opções:
-Ida e Volta (padrão); Somente Ida; e Somente Volta."|	-|	-|
-|54| -	|Alterar texto do aviso	"Atenção ao Preenchimento O preenchimento dos trechos de viagem deve conter no mínimo dois trechos, um com etapa de deslocamento de Ida e outro com etapa de deslocamento de Volta."|	"Atenção ao Preenchimento O preenchimento dos trechos de viagem deve conter no mínimo: Um trecho de ida e um trecho de volta para viagens de Ida e Volta; Um trecho de ida , para viagens só de ida; ou Um trecho de volta para viagens só de volta."|
+|53| Tipo de viagem	|"Incluir o campo “Tipo de viagem” do tipo lista no início da seção com as seguintes opções: Ida e Volta (padrão); Somente Ida; e Somente Volta."|	-|	-|
+|54| -	|Alterar texto do aviso|	"Atenção ao Preenchimento O preenchimento dos trechos de viagem deve conter no mínimo dois trechos, um com etapa de deslocamento de Ida e outro com etapa de deslocamento de Volta."|	"Atenção ao Preenchimento O preenchimento dos trechos de viagem deve conter no mínimo: Um trecho de ida e um trecho de volta para viagens de Ida e Volta; Um trecho de ida , para viagens só de ida; ou Um trecho de volta para viagens só de volta."|
 
 
 
